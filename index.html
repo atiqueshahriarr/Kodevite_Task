@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/f8e7655de4.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
-    
+
+<body class="text-white min-h-screen bg-red-200 flex flex-col">
+    <nav class="bg-black px-6 md:px-12 py-5 ">
+        <div class="max-w-5xl 2xl:max-w-7xl mx-auto">
+            <div class="mx-auto flex justify-between items-center">
+                <div class="flex items-center gap-1.5">
+                    <div class="font-black border-2 rounded-[200px] h-5"></div>
+                    <div class="font-black border-2 rounded-[200px] h-4"></div>
+                    <div class="font-black border-2 rounded-[200px] h-3"></div>
+                    <span class="text-2xl">Site<span class="font-bold">Logo</span></span>
+                </div>
+                <button class="md:hidden" id="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-blue-500">Home</a>
+                    <a href="#" class="hover:text-blue-500">Services</a>
+                    <a href="#" class="hover:text-blue-500">About</a>
+                    <a href="#" class="hover:text-blue-500">Contact</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+                <a href="#" class="block hover:text-blue-500">Home</a>
+                <a href="#" class="block hover:text-blue-500">Services</a>
+                <a href="#" class="block hover:text-blue-500">About</a>
+                <a href="#" class="block hover:text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-blue-500 px-6 md:px-12 flex-grow flex">
+        <div class="max-w-5xl 2xl:max-w-7xl mx-auto grid grid-cols-2 gap-2 md:gap-10 flex items-center relative overflow-hidden">
+            <div class="space-y-8">
+                <h2 class="text-xl md:text-3xl lg:text-5xl font-semibold">Professional Web Design</h2>
+                <p class="text-base lg:text-xl">Hi! My name ia Dmitrii Rogoza and I'm an expert in web design and
+                    branding. I can
+                    help you make your website more attractive</p>
+                <button class="bg-black px-4 py-2 md:px-10 md:py-3 rounded-lg border">
+                    Get started
+                </button>
+            </div>
+            <div class="absolute top-10  md:top-6 lg:top-20 2xl:top-0 right-0 lg:-right-4 max-w-[200px] md:max-w-sm lg:max-w-lg 2xl:max-w-3xl">
+                <img src="./images/shape_line_1.png" alt="" class="w-full">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-black px-6 md:px-12 py-10">
+        <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16 max-w-5xl 2xl:max-w-7xl mx-auto">
+
+            <div class="flex-1">
+                <div class="flex items-center gap-1">
+                    <div class="font-black border-2 rounded-[200px] h-5"></div>
+                    <div class="font-black border-2 rounded-[200px] h-4"></div>
+                    <div class="font-black border-2 rounded-[200px] h-3"></div>
+                    <span class="text-2xl font-light">Site<span class="font-semibold">Logo</span></span>
+                </div>
+                <p class="mt-4 lg:mt-8">
+                    High level experience in web design and development knowledge, producing quality work.
+                </p>
+            </div>
+
+            <div class="flex-1 flex justify-between lg:justify-evenly gap-16">
+                <div>
+                    <h3 class="text-lg font-bold mb-4 lg:mb-8">Use Cases</h3>
+                    <ul class="space-y-2 lg:space-y-4">
+                        <li><a href="#">Web-designers</a></li>
+                        <li><a href="#">Marketers</a></li>
+                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Website Builder</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 lg:mb-8">Company</h3>
+                    <ul class="space-y-2 lg:space-y-4">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-md font-bold mb-4 lg:mb-9">Follow us</h3>
+                <div class="flex gap-2">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.64L18 10h-4V7a1 1 0 0 1 1-1h3V2z"></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
+                            stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 21.35l-7.57-5.5L3 7.76l2.1-6.5L8.9 7.76h6.2l3.8-6.5 2.1 6.5-1.43 8.09L12 21.35z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 1C5.92 1 1 5.92 1 12c0 4.87 3.16 9 7.55 10.45.55.1.75-.24.75-.53 0-.26-.01-.95-.01-1.87-3.08.67-3.73-1.49-3.73-1.49-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.07-.66.07-.66 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.58 1.2 3.21.92.1-.71.38-1.2.69-1.48-2.46-.28-5.04-1.23-5.04-5.48 0-1.21.43-2.19 1.13-2.96-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.41 3.02-1.12 3.02-1.12.6 1.54.22 2.68.11 2.96.7.77 1.13 1.75 1.13 2.96 0 4.26-2.58 5.19-5.04 5.48.39.33.74.98.74 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.64.76.53A11 11 0 0 0 23 12c0-6.08-4.92-11-11-11z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13" />
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13" />
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
