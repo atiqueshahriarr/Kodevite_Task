@@ -17,16 +17,16 @@
                     <div class="font-black border-2 rounded-[200px] h-5"></div>
                     <div class="font-black border-2 rounded-[200px] h-4"></div>
                     <div class="font-black border-2 rounded-[200px] h-3"></div>
-                    <span class="text-2xl">Site<span class="font-bold">Logo</span></span>
+                    <span class="text-2xl font-light">Site<span class="font-semibold">Logo</span></span>
                 </div>
-                <button class="md:hidden" id="menu-toggle">
+                <button class="md:hidden cursor-pointer" id="menu-toggle">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
 
-                <div class="hidden md:flex space-x-6">
+                <div class="hidden md:flex space-x-10">
                     <a href="#" class="hover:text-blue-500">Home</a>
                     <a href="#" class="hover:text-blue-500">Services</a>
                     <a href="#" class="hover:text-blue-500">About</a>
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+            <div id="mobile-menu" class="md:hidden hidden space-y-4 absolute bg-black/90 w-full left-0 top-18 px-6 py-4 md:px-12  z-10">
                 <a href="#" class="block hover:text-blue-500">Home</a>
                 <a href="#" class="block hover:text-blue-500">Services</a>
                 <a href="#" class="block hover:text-blue-500">About</a>
@@ -44,13 +44,13 @@
     </nav>
 
     <section class="bg-blue-500 px-6 md:px-12 flex-grow flex">
-        <div class="max-w-5xl 2xl:max-w-7xl mx-auto grid grid-cols-2 gap-2 md:gap-10 flex items-center relative overflow-hidden">
-            <div class="space-y-8">
+        <div class="max-w-5xl 2xl:max-w-7xl mx-auto grid grid-cols-2 flex items-center relative overflow-hidden">
+            <div class="space-y-4 md:space-y-8 xl:space-y-12 py-6 pr-8">
                 <h2 class="text-xl md:text-3xl lg:text-5xl font-semibold">Professional Web Design</h2>
-                <p class="text-base lg:text-xl">Hi! My name ia Dmitrii Rogoza and I'm an expert in web design and
+                <p class="text-base lg:text-xl ">Hi! My name ia Dmitrii Rogoza and I'm an expert in web design and
                     branding. I can
                     help you make your website more attractive</p>
-                <button class="bg-black px-4 py-2 md:px-10 md:py-3 rounded-lg border">
+                <button class="bg-black px-4 py-2 md:px-10 md:py-3 rounded-lg border font-medium hover:text-blue-500 hover:border-blue-300 cursor-pointer">
                     Get started
                 </button>
             </div>
@@ -65,7 +65,7 @@
         <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16 max-w-5xl 2xl:max-w-7xl mx-auto">
 
             <div class="flex-1">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1.5">
                     <div class="font-black border-2 rounded-[200px] h-5"></div>
                     <div class="font-black border-2 rounded-[200px] h-4"></div>
                     <div class="font-black border-2 rounded-[200px] h-3"></div>
@@ -149,6 +149,8 @@
         </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
